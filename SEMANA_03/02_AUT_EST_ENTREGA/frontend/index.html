@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width" />
+    <title>CRUD</title>
+  </head>
+  <h1>Listagem de Usuários</h1>
+  <p><a href="/inserir.html">INSERIR NOVO USUÁRIO</a></p>
+
+  <script>
+    const url = '/Formacao';
+  
+    fetch(url)
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        let Formacao = data;
+        let saida = '';
+        Formacao.map(function(Formacao) {
+          saida += '<strong> '+ `${Formacao.Curso}` + '</strong> ' + `${Formacao.DataDeInicio}`  + ' - ' +  `${Formacao.DataDeTermino}`;
+          saida += ' - <a href="/atualizar.html?NUM_Formacao=' + `${Formacao.NUM_Formacao}` + '">EDITAR</a>';
+          saida += ' | <a href="/removeFormacao?NUM_Formacao='+`${Formacao.NUM_Formacao}`+'">REMOVER</a></br>';
+        });
+        document.getElementById('resultado').innerHTML = saida;
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+      
+
+  </script>
+
+  <body>
+    <div id="resultado"></div>
+  </body>
+</html>
