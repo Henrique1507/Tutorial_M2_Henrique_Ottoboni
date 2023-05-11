@@ -1,0 +1,904 @@
+{
+	"info": {
+		"_postman_id": "d419d625-33ab-4b05-92da-1b6e5cd8b5f0",
+		"name": "PonderadaS4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26957480"
+	},
+	"item": [
+		{
+			"name": "Formacao",
+			"item": [
+				{
+					"name": "Formacao",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/Formacao",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"Formacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InsereFormacao",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Curso\": \"Engenhari de Software\",\r\n    \"DataDeInicio\": \"30/01/2023\",\r\n    \"DataDeTermino\": \"01/12/2026\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/insereFormacao",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"insereFormacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AtualizaFormacao",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/atualizaFormacao?NUM_Formacao=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"atualizaFormacao"
+							],
+							"query": [
+								{
+									"key": "NUM_Formacao",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AtualizaFormacao",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"Curso\": \"Medicina\",\r\n\"DataDeInicio\": \"20/01/2021\",\r\n\"DataDeTermino\": \"20/12/2027\",\r\n\"NUM_Formacao\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/atualizaFormacao",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"atualizaFormacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RemoveFormacao",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/removeFormacao?NUM_Formacao=3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"removeFormacao"
+							],
+							"query": [
+								{
+									"key": "NUM_Formacao",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Experiencia",
+			"item": [
+				{
+					"name": "Experiencia",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/Experiencia",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"Experiencia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InsereExperiencia",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Empresa\": \"Inteli\",\r\n    \"DataDeInicio\": \"01/01/2022\",\r\n    \"DataDeTermino\": \"01/01/2024\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/insereExperiencia",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"insereExperiencia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AtualizaExperiencia",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/atualizaExperiencia?NUM_Experiencia=9",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"atualizaExperiencia"
+							],
+							"query": [
+								{
+									"key": "NUM_Experiencia",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AtualizaExperiencia",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Empresa\": \"Inteli\",\r\n    \"DataDeInicio\": \"ff\",\r\n    \"DataDeTermino\": \"henrique\",\r\n    \"NUM_Experiencia\": 8\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/atualizaExperiencia",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"atualizaExperiencia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RemoveExperiencia",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/removeExperiencia?NUM_Experiencia=8",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"removeExperiencia"
+							],
+							"query": [
+								{
+									"key": "NUM_Experiencia",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Realizacoes",
+			"item": [
+				{
+					"name": "Realizacoes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/Realizacoes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"Realizacoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InsereRealizacoes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"TrabalhoAgregado\": \"Jogo de futebol na comunidade\",\r\n\"DataDeInicio\": \"1/1/21\",\r\n\"DataDeTermino\": \"22/22\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/insereRealizacoes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"insereRealizacoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AtualizaRealizacoes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/atualizaRealizacoes?NUM_Realizacoes=8",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"atualizaRealizacoes"
+							],
+							"query": [
+								{
+									"key": "NUM_Realizacoes",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AtualizaRealizacoes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"TrabalhoAgregado\": \"OI\",\r\n\"DataDeInicio\": \"03/01/2021\",\r\n\"DataDeTermino\": \"20/10/22\",\r\n\"NUM_Realizacoes\": 8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/atualizaRealizacoes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"atualizaRealizacoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RemoveRealizacoes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/removeRealizacoes?NUM_Realizacoes=9",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"removeRealizacoes"
+							],
+							"query": [
+								{
+									"key": "NUM_Realizacoes",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SobreMim",
+			"item": [
+				{
+					"name": "SobreMim",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/SobreMim",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"SobreMim"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InsereSobreMim",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"Descricao\": \"Henriquera do Grau\",\r\n\"Telefone\": \"12-99732-2005\",\r\n\"Email\": \"ottobonihenrique12@gmail.com\",\r\n\"Endereco\": \"Rua MMMDC - 80\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/insereSobreMim",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"insereSobreMim"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AtualizaSobreMim",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/atualizaSobreMim?NUM_SobreMim=5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"atualizaSobreMim"
+							],
+							"query": [
+								{
+									"key": "NUM_SobreMim",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AtualizaSobreMim",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"Descricao\": \"Henricão do Grau\",\r\n\"Telefone\": \"12-99732-2005\",\r\n\"Email\": \"ottobonihenrique12@gmail.com\",\r\n\"Endereco\": \"Rua MMMDC - 70\",\r\n\"NUM_SobreMim\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/atualizaSobreMim",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"atualizaSobreMim"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RemoveSobreMim",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/removeSobreMim?NUM_SobreMim=5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"removeSobreMim"
+							],
+							"query": [
+								{
+									"key": "NUM_SobreMim",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Habilidades",
+			"item": [
+				{
+					"name": "Habilidades",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/Habilidades",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"Habilidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InsereHabilidades",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"Photoshop\": \"j\",\r\n\"Illustrator\": \"k\",\r\n\"CorelDraw\": \"l\",\r\n\"DreamWeaver\": \"m\",\r\n\"HTML\": \"n\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/insereHabilidades",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"insereHabilidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AtualizaHabilidades",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/atualizaHabilidades?NUM_Habilidades=5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"atualizaHabilidades"
+							],
+							"query": [
+								{
+									"key": "NUM_Habilidades",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AtualizaHabilidades",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"Photoshop\": \"e\",\r\n\"Illustrator\": \"f\",\r\n\"CorelDraw\": \"g\",\r\n\"DreamWeaver\": \"h\",\r\n\"HTML\": \"i\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/atualizaHabilidades",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"atualizaHabilidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RemoveHabilidades",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/removeHabilidades?NUM_Habilidades=7",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"removeHabilidades"
+							],
+							"query": [
+								{
+									"key": "NUM_Habilidades",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Personalidade",
+			"item": [
+				{
+					"name": "Personalidade",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/Personalidade",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"Personalidade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InserePersonalidade",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LoremIpsum\": \"a\",\r\n\"Loremlpsum\": \"b\",\r\n\"LoremIpsun\": \"c\",\r\n\"Loremlpsun\": \"d\",\r\n\"LorenIpsum\": \"rrr\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/inserePersonalidade",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"inserePersonalidade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AtualizaPersonalidade",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/atualizaPersonalidade?NUM_Personalidade=6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"atualizaPersonalidade"
+							],
+							"query": [
+								{
+									"key": "NUM_Personalidade",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AtualizaPersonalidade",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LoremIpsum\": \"dd\",\r\n\"Loremlpsum\": \"aa\",\r\n\"LoremIpsun\": \"qq\",\r\n\"Loremlpsun\": \"ww\",\r\n\"LorenIpsum\": \"ss\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/atualizaPersonalidade",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"atualizaPersonalidade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RemovePersonalidade",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/removePersonalidade?NUM_Personalidade=6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"removePersonalidade"
+							],
+							"query": [
+								{
+									"key": "NUM_Personalidade",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

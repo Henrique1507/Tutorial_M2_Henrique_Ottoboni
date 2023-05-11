@@ -36,7 +36,7 @@ app.post('/insereFormacao', urlencodedParser, (req, res) => {
 	res.statusCode = 200;
 	res.setHeader('Access-Control-Allow-Origin', '*'); 
 	var db = new sqlite3.Database(DBPATH); // Abre o banco
-	sql = "INSERT INTO Formacao (Curso, DataDeInicio, DataDeTermino) VALUES ('" + req.body.Curso + "', '" + req.body.DataDeInicio + "', '" + req.body.DataDeTermino + "')";
+	sql = "INSERT INTO Formacao (Curso, DataDeInicio, DataDeTermino) VALUES ('" + req.body.Curso + "', '" + req.body.DataDeInicio + "', '" + req.body.DataDeTermino + ")";
 	console.log(sql);
 	db.run(sql, [],  err => {
 		if (err) {
