@@ -15,15 +15,31 @@
         });
 
 
-                $(document).ready(function() {
+            $(document).ready(function() {
         $(".imagem-zoom").on("mouseover", function() {
-            $(this).css("transform", "scale(1.5)"); // Aumenta o tamanho da imagem
+            $(this).css("transform", "scale(1.5)"); 
         }).on("mouseout", function() {
-            $(this).css("transform", "scale(1)"); // Restaura o tamanho original da imagem
+            $(this).css("transform", "scale(1)"); 
         });
         });
 
-        alert('Nesta atividade há 2 exemplos de JQuery. Primeiro um clique para apresentar uma mensagem introdutória. O segundo, a imagem amplia ao passar o mouse')
+
+
+             // Para ver este código funcionando, basta colocar o nickname do usuário no GitHub ao final da URL abaixo e 
+             // o console.log exibirá o nome do usuário utilizado no Github. Exemplo: "https://api.github.com/users/Henrique1507". 
+             // O console.log mostrará "Henrique Ottoboni". Ou seja, nickname: Henrique1507. Nome do usuário: Henrique Ottoboni.
+             // Caso queira, teste colocando seu nickname utilizado no Github, professor!
+
+                $.ajax({
+            url: "https://api.github.com/users/Henrique1507",
+            method: "GET",
+            success: function(response) {
+              console.log("Nome no Github: " + response.name);
+            },
+            error: function(error) {
+              console.log("Erro na requisição: " + error.statusText);
+            }
+          });
     </script>
 </head>
 <body>
